@@ -7,18 +7,9 @@
 
     <!-- ===== متا تگ‌های شبکه‌های اجتماعی ===== -->
     <meta property="og:title" content="دعوتنامه عروسی محمد و حدیث" />
-    <meta
-      property="og:image"
-      content="https://cdn.imgurl.ir/uploads/v95626_1_1.png"
-    />
-    <meta
-      property="og:description"
-      content="ما را در بزرگترین شب زندگیمان همراهی کنید. ۲۵ مرداد ۱۴۰۵، تالار هرمس"
-    />
-    <meta
-      property="og:url"
-      content="https://www.mrahimi5436-source.github.io/wedding22/"
-    />
+    <meta property="og:image" content="https://cdn.imgurl.ir/uploads/v95626_1_1.png" />
+    <meta property="og:description" content="ما را در بزرگترین شب زندگیمان همراهی کنید. ۲۵ مرداد ۱۴۰۵، تالار هرمس" />
+    <meta property="og:url" content="https://www.mrahimi5436-source.github.io/wedding22/" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap"
@@ -37,9 +28,10 @@
         background: #2a1f1f;
         font-family: 'Montserrat', sans-serif;
         overflow-x: hidden;
+        padding-bottom: 80px; /* فاصله از پایین برای دایره‌ها */
       }
 
-      /* Splash */
+      /* ===== Splash (صفحه ورود) - مینیمال ===== */
       #splash {
         position: fixed;
         top: 0;
@@ -52,52 +44,54 @@
         align-items: center;
         justify-content: center;
         z-index: 9999;
-        gap: 2rem;
+        gap: 1.2rem; /* کاهش فاصله */
+        padding: 1.5rem;
       }
       #splash .splash-title {
         font-family: 'Playfair Display', serif;
         font-style: italic;
         color: #e8d5b0;
-        font-size: 2.5rem;
+        font-size: 2rem; /* کوچک‌تر */
+        letter-spacing: 2px;
       }
       #splash .splash-sub {
         color: #c4a882;
-        font-size: 0.75rem;
-        letter-spacing: 5px;
+        font-size: 0.65rem; /* کوچک‌تر */
+        letter-spacing: 4px;
         text-transform: uppercase;
       }
       #splash .enter-btn {
         background: transparent;
-        border: 1px solid rgba(196, 168, 130, 0.6);
+        border: 1px solid rgba(196, 168, 130, 0.5);
         color: #e8d5b0;
-        padding: 14px 40px;
+        padding: 12px 32px; /* کوچک‌تر */
         border-radius: 30px;
-        font-size: 0.85rem;
-        letter-spacing: 3px;
+        font-size: 0.75rem; /* کوچک‌تر */
+        letter-spacing: 2px;
         cursor: pointer;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         transition: all 0.3s;
       }
       #splash .enter-btn:hover {
         background: rgba(196, 168, 130, 0.15);
       }
 
-      /* Timer section */
+      /* ===== Timer section ===== */
       #timer-section {
         min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
+        padding: 2rem 1rem;
       }
       .card {
         background: #3b2f2f;
         border-radius: 20px;
-        padding: 3rem 2.5rem 4rem;
+        padding: 2.5rem 1.8rem 3.5rem;
         text-align: center;
-        max-width: 480px;
+        max-width: 460px;
         width: 100%;
         border: 1px solid rgba(196, 168, 130, 0.2);
         position: relative;
@@ -110,7 +104,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 80px;
+        height: 70px;
         background: linear-gradient(to bottom, transparent, #2a1f1f);
         pointer-events: none;
         border-radius: 0 0 20px 20px;
@@ -119,110 +113,110 @@
         font-family: 'Playfair Display', serif;
         font-style: italic;
         color: #e8d5b0;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         letter-spacing: 1px;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.1rem;
       }
       .names {
         color: #c4a882;
-        font-size: 0.75rem;
-        letter-spacing: 5px;
+        font-size: 0.65rem;
+        letter-spacing: 4px;
         text-transform: uppercase;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
       }
       .divider {
-        width: 60px;
+        width: 50px;
         height: 1px;
         background: #c4a882;
-        margin: 1rem auto 2rem;
+        margin: 0.8rem auto 1.5rem;
         opacity: 0.5;
       }
       .timer-grid {
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 0.8rem;
         flex-wrap: wrap;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
       }
       .timer-box {
         background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(196, 168, 130, 0.25);
+        border: 1px solid rgba(196, 168, 130, 0.2);
         border-radius: 12px;
-        padding: 1.25rem 1.5rem;
-        min-width: 85px;
+        padding: 1rem 1.2rem;
+        min-width: 72px;
       }
       .timer-num {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         font-weight: 600;
         color: #e8d5b0;
         line-height: 1;
         display: block;
       }
       .timer-label {
-        font-size: 0.6rem;
-        letter-spacing: 3px;
+        font-size: 0.5rem;
+        letter-spacing: 2px;
         text-transform: uppercase;
         color: #c4a882;
-        margin-top: 8px;
+        margin-top: 5px;
         display: block;
       }
       .date-text {
         color: #c4a882;
-        font-size: 1rem;
-        letter-spacing: 2px;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
         opacity: 0.7;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
       }
       .address-link {
         display: block;
         text-decoration: none;
-        margin-top: 1rem;
+        margin-top: 0.8rem;
         cursor: pointer;
       }
       .address-text {
         color: #e8d5b0;
-        font-size: 0.99rem;
-        letter-spacing: 1px;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
       }
       .address-sub {
         color: #c4a882;
-        font-size: 1rem;
-        letter-spacing: 1px;
-        margin-top: 4px;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+        margin-top: 2px;
         opacity: 0.8;
       }
       .address-hint {
         color: #a6d046;
-        font-size: 1.2rem;
-        letter-spacing: 2px;
-        margin-top: 10px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-top: 6px;
       }
       .done-msg {
         color: #e8d5b0;
         font-family: 'Playfair Display', serif;
         font-style: italic;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         display: none;
       }
       .scroll-hint {
-        margin-top: 1.5rem;
+        margin-top: 1.2rem;
         color: #f5c842;
-        font-size: 1.1rem;
+        font-size: 0.95rem;
         font-weight: 600;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         cursor: pointer;
         animation: bounce 1.5s infinite;
-        background: rgba(255, 215, 0, 0.1);
-        padding: 12px 25px;
+        background: rgba(255, 215, 0, 0.08);
+        padding: 10px 20px;
         border-radius: 50px;
-        border: 1px solid rgba(245, 200, 66, 0.4);
+        border: 1px solid rgba(245, 200, 66, 0.3);
         transition: all 0.3s ease;
         display: inline-block;
       }
       .scroll-hint:hover {
-        background: rgba(245, 200, 66, 0.25);
-        transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(245, 200, 66, 0.2);
+        background: rgba(245, 200, 66, 0.2);
+        transform: scale(1.03);
+        box-shadow: 0 0 15px rgba(245, 200, 66, 0.15);
       }
       @keyframes bounce {
         0%,
@@ -230,29 +224,30 @@
           transform: translateY(0);
         }
         50% {
-          transform: translateY(6px);
+          transform: translateY(5px);
         }
       }
 
-      /* Pages section */
+      /* ===== Pages section ===== */
       #pages-section {
-        padding: 2rem 1rem 4rem;
+        padding: 1.5rem 1rem 5rem;
         max-width: 500px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 2.5rem;
+        min-height: 100vh;
       }
       .page-card {
         opacity: 0;
-        transform: translateY(60px);
-        transition:
-          opacity 0.8s ease,
-          transform 0.8s ease;
-        border-radius: 16px;
+        transform: translateY(40px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+        border-radius: 14px;
         overflow: hidden;
-        border: 1px solid rgba(196, 168, 130, 0.2);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(196, 168, 130, 0.15);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+        background: #2a1f1f;
+        min-height: 150px;
       }
       .page-card.visible {
         opacity: 1;
@@ -260,40 +255,41 @@
       }
       .page-card img {
         width: 100%;
+        height: auto;
         display: block;
+        background: #2a1f1f;
       }
 
       /* ===== نوار ناوبری (Navigation Dots) ===== */
       .nav-dots {
         position: fixed;
-        left: 20px; /* در سمت چپ (چون RTL است) */
+        left: 16px;
         top: 50%;
         transform: translateY(-50%);
         display: flex;
         flex-direction: column;
-        gap: 14px;
+        gap: 12px;
         z-index: 999;
-        background: rgba(0, 0, 0, 0.4);
-        padding: 12px 8px;
-        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.35);
+        padding: 10px 7px;
+        border-radius: 25px;
         backdrop-filter: blur(4px);
-        border: 1px solid rgba(196, 168, 130, 0.2);
+        border: 1px solid rgba(196, 168, 130, 0.15);
       }
       .nav-dot {
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         background: #5a4a4a;
-        border: 2px solid rgba(196, 168, 130, 0.3);
+        border: 2px solid rgba(196, 168, 130, 0.2);
         cursor: pointer;
         transition: all 0.4s ease;
-        position: relative;
       }
       .nav-dot.active {
         background: #f5c842;
         border-color: #f5c842;
         transform: scale(1.4);
-        box-shadow: 0 0 16px rgba(245, 200, 66, 0.5);
+        box-shadow: 0 0 12px rgba(245, 200, 66, 0.4);
       }
       .nav-dot:hover {
         transform: scale(1.2);
@@ -305,20 +301,23 @@
         .nav-dots {
           left: 50%;
           top: auto;
-          bottom: 20px;
+          bottom: 16px;
           transform: translateX(-50%);
           flex-direction: row;
-          gap: 12px;
-          padding: 8px 14px;
-          background: rgba(0, 0, 0, 0.6);
+          gap: 10px;
+          padding: 6px 12px;
+          background: rgba(0, 0, 0, 0.5);
         }
         .nav-dot {
-          width: 10px;
-          height: 10px;
+          width: 9px;
+          height: 9px;
+        }
+        body {
+          padding-bottom: 70px;
         }
       }
 
-      /* Confetti */
+      /* ===== Confetti ===== */
       #confetti-canvas {
         position: fixed;
         top: 0;
@@ -344,7 +343,7 @@
 
     <!-- ===== نوار ناوبری (دایره‌ها) ===== -->
     <div class="nav-dots" id="navDots">
-      <div class="nav-dot" data-index="0"></div>
+      <div class="nav-dot active" data-index="0"></div>
       <div class="nav-dot" data-index="1"></div>
       <div class="nav-dot" data-index="2"></div>
       <div class="nav-dot" data-index="3"></div>
@@ -377,13 +376,9 @@
         </div>
         <p class="done-msg" id="done-msg">مبارک باشد 🌹</p>
         <p class="date-text">۲۵ مرداد ۱۴۰۵ &nbsp;|&nbsp; ساعت ۱۸:۰۰</p>
-        <div class="divider" style="margin-top: 1.5rem"></div>
+        <div class="divider" style="margin-top: 1.2rem"></div>
 
-        <a
-          href="https://maps.app.goo.gl/goT2bqWSuafaofVW8"
-          target="_blank"
-          class="address-link"
-        >
+        <a href="https://maps.app.goo.gl/goT2bqWSuafaofVW8" target="_blank" class="address-link">
           <p class="address-text">📍 مشهد — پیامبر اعظم ۱۰۵</p>
           <p class="address-sub">بین گلستان ۱ و ۳</p>
           <p class="address-hint"></p>
@@ -398,19 +393,19 @@
     <!-- Pages -->
     <div id="pages-section" style="display: none">
       <div class="page-card" data-page="0">
-        <img src="https://cdn.imgurl.ir/uploads/v95626_1_1.png" alt="صفحه 1" />
+        <img src="https://cdn.imgurl.ir/uploads/v95626_1_1.png" alt="صفحه 1" loading="lazy" />
       </div>
       <div class="page-card" data-page="1">
-        <img src="https://cdn.imgurl.ir/uploads/k54966_2.png" alt="صفحه 2" />
+        <img src="https://cdn.imgurl.ir/uploads/k54966_2.png" alt="صفحه 2" loading="lazy" />
       </div>
       <div class="page-card" data-page="2">
-        <img src="https://cdn.imgurl.ir/uploads/b37433_3.png" alt="صفحه 3" />
+        <img src="https://cdn.imgurl.ir/uploads/b37433_3.png" alt="صفحه 3" loading="lazy" />
       </div>
       <div class="page-card" data-page="3">
-        <img src="https://cdn.imgurl.ir/uploads/q150241_4.png" alt="صفحه 4" />
+        <img src="https://cdn.imgurl.ir/uploads/q150241_4.png" alt="صفحه 4" loading="lazy" />
       </div>
       <div class="page-card" data-page="4">
-        <img src="https://cdn.imgurl.ir/uploads/i569153_5.png" alt="صفحه 5" />
+        <img src="https://cdn.imgurl.ir/uploads/i569153_5.png" alt="صفحه 5" loading="lazy" />
       </div>
     </div>
 
@@ -423,150 +418,124 @@
 
     <script>
       function enterSite() {
-        document.getElementById('splash').style.display = 'none'
-        document.getElementById('timer-section').style.display = 'flex'
-        document.getElementById('pages-section').style.display = 'flex'
+        document.getElementById('splash').style.display = 'none';
+        document.getElementById('timer-section').style.display = 'flex';
+        document.getElementById('pages-section').style.display = 'flex';
         document
           .getElementById('wedding-audio')
           .play()
-          .catch(() => {})
-        startConfetti()
-        observeCards()
-        initNavDots()
+          .catch(() => {});
+        startConfetti();
+        observeCards();
+        initNavDots();
 
-        setTimeout(function () {
+        setTimeout(function() {
           if (window.scrollY < 100) {
-            document.getElementById('pages-section').scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-            })
+            document.getElementById('pages-section').scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'start' 
+            });
           }
-        }, 10000)
+        }, 4000);
       }
 
       function scrollDown() {
-        document.getElementById('pages-section').scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        })
+        document.getElementById('pages-section').scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
       }
 
       // ===== نوار ناوبری =====
       function initNavDots() {
-        const dots = document.querySelectorAll('.nav-dot')
-        const cards = document.querySelectorAll('.page-card')
+        const dots = document.querySelectorAll('.nav-dot');
+        const cards = document.querySelectorAll('.page-card');
+        const timerSection = document.getElementById('timer-section');
 
-        // کلیک روی هر دایره
         dots.forEach((dot) => {
-          dot.addEventListener('click', function () {
-            const index = parseInt(this.dataset.index)
+          dot.addEventListener('click', function() {
+            const index = parseInt(this.dataset.index);
             if (cards[index]) {
-              cards[index].scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-              })
+              cards[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
-          })
-        })
+          });
+        });
 
-        // به‌روزرسانی با اسکرول
-        window.addEventListener('scroll', function () {
-          let currentIndex = -1
-          const scrollY = window.scrollY + 200 // افست برای تشخیص بهتر
+        window.addEventListener('scroll', function() {
+          let currentIndex = -1;
+          
+          const timerRect = timerSection.getBoundingClientRect();
+          if (timerRect.top <= window.innerHeight / 2 && timerRect.bottom >= window.innerHeight / 2) {
+            currentIndex = -1;
+          }
 
           cards.forEach((card, index) => {
-            const rect = card.getBoundingClientRect()
-            // اگر کارت در viewport است
-            if (
-              rect.top <= window.innerHeight / 2 &&
-              rect.bottom >= window.innerHeight / 2
-            ) {
-              currentIndex = index
+            const rect = card.getBoundingClientRect();
+            if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+              currentIndex = index;
             }
-          })
-
-          // اگر هیچ کارتی در وسط نبود، صفحه تایمر را انتخاب کن
-          if (currentIndex === -1) {
-            const timerSection = document.getElementById('timer-section')
-            const rect = timerSection.getBoundingClientRect()
-            if (
-              rect.top <= window.innerHeight / 2 &&
-              rect.bottom >= window.innerHeight / 2
-            ) {
-              currentIndex = -1 // هیچ دایره‌ای فعال نباشد
-            }
-          }
+          });
 
           dots.forEach((dot, index) => {
             if (index === currentIndex) {
-              dot.classList.add('active')
+              dot.classList.add('active');
             } else {
-              dot.classList.remove('active')
+              dot.classList.remove('active');
             }
-          })
-        })
+          });
+        });
       }
 
       // Timer
-      const weddingDate = new Date(2026, 7, 16, 18, 0, 0)
+      const weddingDate = new Date(2026, 7, 16, 18, 0, 0);
       function pad(n) {
-        return String(Math.floor(n)).padStart(2, '0')
+        return String(Math.floor(n)).padStart(2, '0');
       }
       function tick() {
-        const diff = weddingDate - new Date()
+        const diff = weddingDate - new Date();
         if (diff <= 0) {
-          document.getElementById('timer-grid').style.display = 'none'
-          document.getElementById('done-msg').style.display = 'block'
-          return
+          document.getElementById('timer-grid').style.display = 'none';
+          document.getElementById('done-msg').style.display = 'block';
+          return;
         }
-        document.getElementById('days').textContent = pad(diff / 86400000)
-        document.getElementById('hours').textContent = pad(
-          (diff % 86400000) / 3600000
-        )
-        document.getElementById('mins').textContent = pad(
-          (diff % 3600000) / 60000
-        )
-        document.getElementById('secs').textContent = pad((diff % 60000) / 1000)
+        document.getElementById('days').textContent = pad(diff / 86400000);
+        document.getElementById('hours').textContent = pad((diff % 86400000) / 3600000);
+        document.getElementById('mins').textContent = pad((diff % 3600000) / 60000);
+        document.getElementById('secs').textContent = pad((diff % 60000) / 1000);
       }
-      tick()
-      setInterval(tick, 1000)
+      tick();
+      setInterval(tick, 1000);
 
       // Scroll reveal
       function observeCards() {
-        const cards = document.querySelectorAll('.page-card')
+        const cards = document.querySelectorAll('.page-card');
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((e) => {
               if (e.isIntersecting) {
-                e.target.classList.add('visible')
+                e.target.classList.add('visible');
               }
-            })
+            });
           },
-          { threshold: 0.15 }
-        )
-        cards.forEach((c) => observer.observe(c))
+          { threshold: 0.1 }
+        );
+        cards.forEach((c) => observer.observe(c));
       }
 
       // Confetti
-      const canvas = document.getElementById('confetti-canvas')
-      const ctx = canvas.getContext('2d')
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
+      const canvas = document.getElementById('confetti-canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
       window.addEventListener('resize', () => {
-        canvas.width = window.innerWidth
-        canvas.height = window.innerHeight
-      })
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
       const colors = [
-        '#e8d5b0',
-        '#c4a882',
-        '#fff8e7',
-        '#f5c842',
-        '#e8a0a0',
-        '#ffb347',
-        '#d4af37',
-        '#fff',
-      ]
-      let pieces = []
+        '#e8d5b0', '#c4a882', '#fff8e7', '#f5c842',
+        '#e8a0a0', '#ffb347', '#d4af37', '#fff'
+      ];
+      let pieces = [];
       function startConfetti() {
         pieces = Array.from({ length: 150 }, () => ({
           x: Math.random() * canvas.width,
@@ -579,28 +548,28 @@
           spin: Math.random() * 3 - 1.5,
           sway: Math.random() * 2 - 1,
           opacity: Math.random() * 0.6 + 0.4,
-        }))
-        drawConfetti()
+        }));
+        drawConfetti();
       }
       function drawConfetti() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         pieces.forEach((p) => {
-          ctx.save()
-          ctx.globalAlpha = p.opacity
-          ctx.translate(p.x, p.y)
-          ctx.rotate((p.angle * Math.PI) / 180)
-          ctx.fillStyle = p.color
-          ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h)
-          ctx.restore()
-          p.y += p.speed
-          p.x += p.sway
-          p.angle += p.spin
+          ctx.save();
+          ctx.globalAlpha = p.opacity;
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.angle * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+          ctx.restore();
+          p.y += p.speed;
+          p.x += p.sway;
+          p.angle += p.spin;
           if (p.y > canvas.height + 20) {
-            p.y = -15
-            p.x = Math.random() * canvas.width
+            p.y = -15;
+            p.x = Math.random() * canvas.width;
           }
-        })
-        requestAnimationFrame(drawConfetti)
+        });
+        requestAnimationFrame(drawConfetti);
       }
     </script>
   </body>
